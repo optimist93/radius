@@ -1,0 +1,82 @@
+@import "normalize"
+@import "vars"
+
+@import "header"
+@import "nav"
+@import "main"
+@import "services"
+@import "services-nav"
+@import "advantages"
+@import "comment"
+@import "requirements"
+@import "feedback"
+@import "modal"
+@import "footer"
+	
+body
+	font-size: 14px
+	font-family: Arial, Helvetica, sans-serif
+	font-weight: 400
+	color: $text
+	background: #fff
+input,
+button
+	outline: none
+.container
+	max-width: 1465px
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+.title
+	display: inline-block
+	padding: 5px
+	font-size: 32px
+	text-transform: uppercase
+	color: $title
+	background: #fff
+.subtitle
+	max-width: 738px
+	padding: 10px
+	font-size: 16px
+	background: rgba(255, 255, 255, 0.7)
+	text-transform: uppercase
+.info-block
+	background: #fff
+	border: 1px solid #cecece
+	&__title
+		margin-top: 0
+		padding: 24px 24px 0 24px
+.btn
+	display: block
+	width: 100%
+	padding: 16px 0 14px 0
+	border-radius: 21px
+	background-color: #0f427f
+	border: none
+	text-transform: uppercase
+	color: #fff
+	text-align: center
+	cursor: pointer
+	transition: all 0.5s
+	&:hover
+		background: $red
+
+		/* scroll */
+.header.scroll
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 9999
+.header.scroll
+	.container
+		align-items: center
+	.header-block__email,
+	.header-block__skype,
+	.header-block__address
+		display: none
+	.logo
+		height: 54px
+		overflow: hidden
+
+@import "media"

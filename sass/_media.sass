@@ -1,0 +1,196 @@
+@media (max-width: 1500px)
+	.header
+		.container
+			justify-content: center
+			align-items: center
+		.logo
+			height: 37px
+		&-block
+			&__email,
+			&__skype,
+			&__location
+				display: none
+			&.header-block__middle
+				margin: 0 0 0 25px
+		.form-search
+			display: none
+	.main
+		&-nav
+			&__link
+				padding: 0 30px
+	.comment
+		&-list
+			max-width: 1200px
+	.services
+		.container.comment-slider
+			padding-left: 35px
+			padding-right: 35px
+@media (max-width: 1300px)
+	.footer
+		.container
+			justify-content: center
+		&-nav
+			margin-left: 20px
+			&__list
+				margin: -5px 0
+		&-contacts
+			padding: 0 20px
+	.comment
+		&-list
+			max-width: 885px
+@media (max-width: 1199px)
+	.main
+		&-nav
+			&__link
+				padding: 0 15px
+	.services
+		&-descr
+			.container
+				flex-wrap: wrap
+		&-nav
+			margin-bottom: 30px
+			order: -1
+	.footer
+		&-contacts
+			&__block
+				margin-right: 20px
+		&-copy
+			margin: 0 0 0 20px
+@media (max-width: 992px)
+	.header
+		//overflow: hidden
+		.main-nav
+			padding: 5px 0
+			.container
+				flex-direction: row
+				justify-content: flex-start
+		&-block
+			&__phone
+				display: none
+	.main
+		&-nav
+			&-list
+				height: 0
+				&__item
+					display: none
+	.m
+		&-burger
+			display: block
+	.main
+		&-wrap
+			padding-bottom: 20px
+	.title
+		font-size: 24px
+	.subtitle
+		font-size: 14px
+	.comment
+		&-list
+			max-width: 440px
+	.services
+		&-main
+			.bread-crumbs
+				width: 290px
+				padding-left: 15px
+				background: #fff
+			.title
+				margin-bottom: 35px
+		&-block
+			&__title
+				font-size: 18px
+		&-wrap
+			max-width: 750px
+		&-descr
+			&__header
+				flex-direction: column
+			&__social
+				margin-left: 0
+				&-title
+					text-align: left
+				&-items
+					justify-content: flex-start
+					margin-bottom: 20px
+		&-title
+			font-size: 18px
+	.footer
+		&-logo
+			margin-right: 20px
+		&-nav,
+		&-contacts
+			display: none
+		&-copy
+			justify-content: center
+			margin-left: auto	
+			.payment
+				margin-bottom: 10px
+@media (max-width: 768px)
+	.info
+		&-block
+			&__title
+				font-size: 20px
+			&__wrap
+				flex-direction: column
+	.services
+		&-wrap
+			max-width: 480px
+		&-descr
+			&__sliders
+				display: none
+@media (max-width: 576px)
+	.header
+		.container
+			flex-direction: column
+		.logo
+			height: auto
+			margin-right: 0
+	.comment
+		&-list
+			max-width: 250px
+			.slick-track .slick-slide
+				display: block
+			&__item
+				&-avatar
+					margin: 0 auto 20px auto
+		&-links
+			&__add,
+			&__all
+				padding-left: 0
+				background: none
+		.feedback-title
+			flex-direction: column
+			align-items: center
+			&__social
+				margin-top: 8px
+		.feedback-text
+			margin: 0 auto
+	.services
+		&-block
+			&__title
+				font-size: 16px
+		&-wrap
+			width: 235px
+	.popup
+		&-consultation__dialog,
+		&-feedback__dialog
+			padding: 30px 10px
+		&-close
+			right: 15px
+			top: 10px
+			width: 15px
+			height: 15px
+			&:before,
+			&:after
+				background: $text
+		&-content
+			width: 280px
+		&-title
+			font-size: 18px
+		&-form
+			width: 250px
+	.footer
+		.container
+			flex-direction: column
+			align-items: center
+		&-logo
+			margin: 0 0 20px 0
+		&-copy
+			margin-left: 0

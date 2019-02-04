@@ -1,0 +1,51 @@
+.main
+	background: $grey
+	background: url("../img/main/main-bg.jpg") no-repeat	center top
+	background-size: cover
+	&-wrap
+		padding-bottom: 200px
+.typography
+	padding: 15px 0 30px 0
+	background: $grey
+.info-block
+	&__wrap
+		display: flex
+	&__descr
+		max-width: 1080px
+		padding-bottom: 30px
+		padding: 0 16px 16px
+		border-right: 1px solid #cecece
+	&__title
+		font-family: Calibri, Arial
+		font-size: 26px
+		text-transform: uppercase
+	&__subtitle
+		font-size: 16px
+		line-height: 22px
+		font-style: italic
+		color: $subtitle
+	&__text
+		margin-bottom: 24px
+		text-align: justify
+		line-height: 20px
+	&__services
+		min-width: 290px
+		max-width: 385px
+		padding: 0 16px
+		.services-list
+			padding-left: 16px
+			list-style-type: none
+			&__item
+				position: relative
+				padding: 5px 0 5px 12px
+				line-height: 20px
+				&:before
+					content: ''
+					position: absolute
+					left: 0
+					top: 12px
+					display: block
+					width: 6px
+					height: 6px
+					background: #D8495B
+					border-radius: 50%

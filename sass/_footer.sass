@@ -1,0 +1,80 @@
+.footer
+	padding: 20px 0 15px 0
+	background: $text
+	color: #fff
+	.container
+		display: flex
+		flex-wrap: wrap
+	&-nav
+		margin-left: auto
+		&__list
+			display: flex
+			flex-direction: column
+			flex-wrap: wrap
+			margin: -5px 59px -5px 0
+			padding: 0
+			width: 195px
+			height: 66px
+			font-size: 12px
+			list-style-type: none
+			&-item
+				margin: 1px 0
+		&__link
+			color: #fff
+			text-decoration: none
+			transition: all 0.5s
+			&:hover
+				filter: opacity(50%)
+	&-contacts
+		display: flex
+		padding: 0 70px
+		border-right: 1px solid #fff
+		border-left: 1px solid #fff
+		&__block
+			display: flex
+			flex-direction: column
+			margin-right: 68px
+			&:last-child
+				margin-right: 0
+		&__link
+			display: block
+			color: #fff
+			font-size: 12px
+			text-decoration: none
+	&-block
+		&__phone
+			height: 26px
+			margin-bottom: 15px
+			padding-left: 34px
+			font-size: 17px
+			line-height: 26px
+			text-transform: uppercase
+			background: url("../img/footer/call.png") no-repeat left center
+		&__email
+			height: 26px
+			padding-left: 37px
+			line-height: 26px
+			text-decoration: underline
+			background: url("../img/footer/mail.png") no-repeat left center
+		&__location
+			width: 134px
+			height: 26px
+			padding-left: 30px
+			margin-bottom: 15px
+			font-size: 12px
+			text-decoration: underline
+			background: url("../img/footer/location.png") no-repeat left center
+		&__time
+			width: 140px
+			padding-left: 36px
+			background: url("../img/footer/time.png") no-repeat left center
+	&-copy
+		display: flex
+		flex-direction: column
+		font-size: 12px
+		width: 116px
+		margin: 0 60px 0 70px
+		.payment
+			margin-bottom: auto
+			&-underline
+				text-decoration: underline

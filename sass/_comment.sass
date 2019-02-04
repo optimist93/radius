@@ -1,0 +1,82 @@
+.comment
+	.container
+		padding-bottom: 42px
+		border-bottom: 1px solid #efefef
+	&-list
+		display: flex
+		max-width: 1425px
+		margin: 0 auto 28px auto
+		padding: 0
+		list-style-type: none
+		.slick-track
+			display: flex
+			.slick-slide
+				display: flex
+				align-items: flex-start
+				height: auto
+  			flex: 0 0 auto
+		&__item
+			display: flex
+			align-items: center
+			max-width: 459px
+			padding: 25px 4px 23px 12px
+			margin-right: 24px
+			border-radius: 10px
+			border: 1px solid #efefef
+			&-avatar
+				align-self: center
+				width: 66px
+				height: 66px
+				margin-right: 10px
+				border-radius: 50%
+				overflow: hidden
+			&-feedback
+				.feedback-title
+					display: flex
+					justify-content: space-between
+					margin-bottom: 14px
+					&__name
+						color: #393939
+						text-transform: uppercase
+					&__social
+						display: flex
+						&-item
+							display: flex
+							justify-content: center
+							align-items: center
+							width: 20px
+							height: 20px
+							margin: 0 1.5px
+							color: #fff
+							text-decoration: none
+							font-size: 10px
+							background-color: #0f427f
+							border-radius: 50%
+							transition: all 0.5s
+							outline: none
+							&:hover
+								filter: opacity(50%)
+				.feedback-text
+					max-width: 361px
+					font-size: 12px
+					&__link
+						color: #0f427f
+	&-links
+		display: flex
+		justify-content: center
+		&__add,
+		&__all
+			display: block
+			height: 36px
+			padding-left: 35px
+			line-height: 36px
+			font-size: 12px
+			text-decoration: underline
+			color: #0f427f
+			cursor: pointer
+		&__add
+			margin-right: 18px
+			background: url("../img/services/cooment_add.png") no-repeat left center
+		&__all
+			margin-left: 18px
+			background: url("../img/services/cooment_all.png") no-repeat left center

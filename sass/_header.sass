@@ -1,0 +1,96 @@
+.header
+	position: relative
+	padding: 19px 0 0 0
+	background: $grey
+	transition: all 0.9s
+	.container
+		display: flex
+		flex-wrap: wrap
+	.logo
+		margin-right: 15px
+	&-search
+		align-self: center
+		margin-left: auto
+		margin-right: 77px
+	.form-search
+		position: relative
+		&__input
+			width: 312px
+			height: 41px
+			padding: 0 36px 0 14px
+			border: none
+			border-radius: 21px
+			background-color: #ffffff
+			box-sizing: border-box
+		&__btn
+			position: absolute
+			top: 11px
+			right: 11px
+			display: block
+			width: 22px
+			height: 22px
+			border: none
+			background: url("../img/main/search.png") no-repeat
+			cursor: pointer
+	&-block
+		display: flex
+		flex-direction: column
+		&.header-block__middle
+			margin: 0 77px 0 72px
+		&.header-block__location
+			width: 140px
+		&__email
+			display: block
+			height: 26px
+			margin-bottom: 14px
+			padding-left: 37px
+			background: url("../img/main/mail.png") no-repeat left center
+			color: $text
+			font-size: 12px
+			line-height: 26px
+			transition: all 0.5s
+			&:hover
+				filter: opacity(50%)
+		&__call
+			display: block
+			height: 26px
+			padding-left: 26px
+			font-size: 15px
+			line-height: 26px
+			text-transform: uppercase
+			color: #0f427f
+			background: url("../img/main/callback.png") no-repeat left center
+			transition: all 0.5s
+			&:hover
+				filter: opacity(50%)
+		&__skype
+			display: block
+			padding-left: 35px
+			margin-bottom: 14px
+			height: 26px
+			line-height: 26px
+			color: $text
+			font-size: 12px
+			background: url("../img/main/skype.png") no-repeat left center
+		&__phone
+			display: block
+			padding-left: 35px
+			height: 26px
+			font-size: 17px
+			line-height: 26px
+			color: $text
+			text-transform: uppercase
+			text-decoration: none
+			background: url("../img/main/call.png") no-repeat left center
+		&__address
+			height: 26px
+			padding-left: 30px
+			margin-bottom: 14px
+			font-size: 10px
+			text-decoration: underline
+			background: url("../img/main/location.png") no-repeat left center
+		&__work-time
+			height: 26px
+			padding-left: 35px
+			font-size: 12px
+			background: url("../img/main/time.png") no-repeat left center

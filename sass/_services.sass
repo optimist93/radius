@@ -1,0 +1,243 @@
+.services
+	&-main
+		margin-bottom: 48px
+		padding-top: 35px
+		background: url("../img/services/services-main-bg.jpg") no-repeat center center
+		background-size: cover
+		.title
+			margin-bottom: 84px
+	&-title
+		position: relative
+		max-width: 687px
+		padding-left: 18px
+		margin-top: 0
+		font-size: 22px
+		font-weight: 400
+		color: $serv-title
+		text-transform: uppercase
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			display: block
+			width: 7px
+			height: 100%
+			background: $serv-title
+	&-block
+		&__title
+			margin-top: 36px
+			color: #393939
+			font-size: 22px
+			text-transform: uppercase
+			text-align: center
+	&-descr
+		display: flex
+		background: #fff
+		.container
+			display: flex
+			padding-bottom: 48px
+			border-bottom: 1px solid #efefef
+		&-info
+			max-width: 1192px
+			margin-right: 24px
+		&__header
+			display: flex
+			max-width: 1192px
+		&__social
+			width: 239px
+			margin-left: 266px
+			&-title
+				margin-bottom: 8px
+				font-size: 12px
+				text-align: right
+			&-items
+				display: flex
+				justify-content: flex-end
+				.social
+					&-list
+						display: flex
+						margin: 0
+						padding: 0
+						list-style-type: none
+						&__item
+							margin: 0 2px
+		&__sliders
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 270px
+			margin-right: 18px
+			.btn
+				width: 270px
+				margin-top: 12px
+		&__slider
+			width: 230px
+			margin-bottom: 15px
+			.slick-track .slick-slide
+				width: 230px
+				outline: none
+			&-item
+				width: 230px
+				height: 230px
+				img
+					max-width: 100%
+			&-nav
+				.slider-nav
+					width: 230px
+					margin: 0 auto
+				width: 280px
+				height: 70px
+				overflow: hidden
+				&__item
+					width: 70px!important
+					height: 70px
+					margin-right: 5px
+					img
+						width: 70px
+						height: 70px
+				.slick-list
+					height: 70px
+				.slick-track
+					.slick-slide
+						width: 70px
+						height: 70px
+						outline: none
+.bread-crumbs
+	display: flex
+	position: relative
+	height: 28px
+	padding-left: 29px
+	margin-bottom: 54px
+	line-height: 28px
+	box-sizing: border-box
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		width: 7px
+		height: 28px
+		background-color: #0f427f
+	&__link
+		color: $text
+		text-decoration: none
+		&-active
+			color: #0f427f
+/* табы */
+.services
+	&-descr
+		&__tabs
+			display: flex
+.descr
+	&-tabs
+		position: relative
+		width: 100%
+		max-width: 905px
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 28px
+			width: 1px
+			height: 100%
+			background: #efefef
+		&__nav
+			padding: 10px
+			color: #cecece
+			font-size: 15px
+			font-weight: 700
+			text-transform: uppercase
+			text-decoration: none
+		&__title
+			margin: 28px 0
+			color: #0f427f
+			line-height: 19px
+			text-transform: uppercase
+		&__more
+			display: block
+			padding-left: 12px
+			color: #0f427f
+			text-decoration: underline
+			background: url('../img/services/tabs-more.png') no-repeat left center
+			transition: all 0.5s
+.r-tabs
+	.r-tabs-nav
+		padding-bottom: 10px
+		border-bottom: 1px solid #efefef
+	.r-tabs-accordion-title
+		width: 100%
+		padding: 10px
+		margin-left: 1px
+		margin-bottom: 5px
+		border: 1px solid $text
+		.r-tabs-anchor
+			color: $text
+			text-decoration: none
+	.descr-tabs__nav
+		transition: all 0.5s
+		&:hover
+			color: #393939
+.r-tabs-state-active
+	.descr-tabs__nav
+		color: #393939
+		border: 1px solid #efefef
+		border-bottom: 2px solid #fff
+		border-top-right-radius: 10px
+		border-top-left-radius: 10px
+	.r-tabs-anchor
+		color: #393939
+
+
+/* Рекомендуемые Услуги */
+.services
+	.container.services-slider
+		padding-left: 35px
+		padding-right: 35px
+	.services-block__title
+		margin-bottom: 25px
+	&-wrap
+		max-width: 1186px
+		padding: 0
+		margin: 0 auto 79px auto
+		&__item
+			position: relative
+			width: 230px
+			img
+				max-width: 100%
+		&__link
+			position: absolute
+			bottom: 15px
+			width: 100%
+			display: block
+			color: #fff
+			font-size: 15px
+			text-align: center
+			text-decoration: underline
+			text-transform: uppercase
+			outline: none
+		.slick-track .slick-slide
+			margin: 0 4px
+			outline: none
+
+.arrow
+	width: 9px
+	height: 17px
+	cursor: pointer
+	&:hover
+		i.fas
+			color: $red
+	i.fas
+		color: #0f427f
+		font-size: 17px
+		transition: all 0.5s
+	&_right
+		position: absolute
+		right: -20px
+		top: 50%
+		margin-top: -8.5px
+	&_left
+		position: absolute
+		left: -20px
+		top: 50%
+		margin-top: -8.5px

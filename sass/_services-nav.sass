@@ -1,0 +1,29 @@
+.services-nav
+	width: 248px
+	background: $grey
+	&-list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		&__item
+			&:last-child
+				.services-nav__link
+					border-bottom: none
+	&__link
+		display: block
+		padding: 16px 10px 14px 24px
+		color: #393939
+		text-transform: uppercase
+		text-decoration: none
+		border-bottom: 1px solid #fff
+		transition: all 0.5s
+		&:hover
+			color: #fff
+			background: $text
+		&-active
+			color: #fff
+			background: $text
+.current
+	a
+		color: #fff
+		background-color: #242829
