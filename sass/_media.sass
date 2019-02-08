@@ -20,7 +20,7 @@
 				padding: 0 30px
 	.comment
 		&-list
-			max-width: 1200px
+			max-width: 1176px
 	.services
 		.container.comment-slider
 			padding-left: 35px
@@ -45,11 +45,15 @@
 				padding: 0 15px
 	.services
 		&-descr
-			.container
-				flex-wrap: wrap
+			&__header
+				margin-bottom: 30px
+			&__social
+				margin-left: auto
+			&__sliders
+				display: none
 		&-nav
+			align-self: flex-start
 			margin-bottom: 30px
-			order: -1
 	.footer
 		&-contacts
 			&__block
@@ -58,15 +62,29 @@
 			margin: 0 0 0 20px
 @media (max-width: 992px)
 	.header
-		//overflow: hidden
 		.main-nav
 			padding: 5px 0
 			.container
 				flex-direction: row
 				justify-content: flex-start
+		&.scroll
+			padding: 0
+			.main-nav
+				margin-top: 0
+				.header-block__call.consultation-link
+					display: block
+			.consultation-link
+				display: none
 		&-block
 			&__phone
 				display: none
+	.header.scroll
+		.logo
+			display: none
+		&-block
+			&.call
+				width: 100%
+				align-items: center
 	.main
 		&-nav
 			&-list
@@ -129,12 +147,23 @@
 				font-size: 20px
 			&__wrap
 				flex-direction: column
+			&__descr
+				border-right: none
 	.services
+		&-title
+			font-size: 16px
 		&-wrap
 			max-width: 480px
 		&-descr
-			&__sliders
-				display: none
+			.container
+				flex-direction: column
+		&-nav
+			width: 90%
+			margin: 0 auto 30px auto
+			text-align: center
+			order: -1
+			&__link
+				padding: 14px 16px
 @media (max-width: 576px)
 	.header
 		.container

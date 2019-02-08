@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	
 	var location = window.location.href;
-	var cur_url = '/' + location.split('/').pop();
+	var cur_url = location.split('/').pop();
 	
 	$('.main-nav-list .main-nav-list__item').each(function () {
 		var link = $(this).find('a').attr('href');
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 200){
+		if ($(this).scrollTop() > 100){
 		$('.header').addClass("scroll");
 		}
 		else{
@@ -22,7 +22,10 @@ $(document).ready(function() {
 
 	/* mobile navigation */
 	$('.m-burger').on('click', function(){
-		$('.m-nav').toggleClass('m-nav-visible');
+		$('.m-nav').addClass('m-nav-visible');
+	});
+	$('.m-nav__close').on('click', function(){
+		$('.m-nav').removeClass('m-nav-visible');
 	});
 
 	$('.descr-tabs').responsiveTabs({
@@ -100,17 +103,7 @@ $(document).ready(function() {
 	});
 
 	/* tooltips */
-	$('.tooltip').mouseover(function(){
-		text = $(this).data('content');
-		$(this).find('.tooltip-content').text(text);
-		$(this).find('.tooltip-content').show();
-		$(this).find('.triangle').show();
-	});
-	
-	$('.tooltip').mouseout(function(){
-		$(this).find('.tooltip-content').hide();
-		$(this).find('.triangle').hide();
-	});
+	$('.tooltip').tooltipster();
 	/* popup windows */
 
 	$('.consultation-link').on('click', function(){

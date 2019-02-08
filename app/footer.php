@@ -113,6 +113,7 @@
 	<script src="js/jquery.responsiveTabs.min.js"></script>
 	<script src="https://unpkg.com/tippy.js@3/dist/tippy.all.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/tooltipster.bundle.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

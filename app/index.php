@@ -3,9 +3,9 @@
 	<div class="main">
 		<div class="container">
 			<div class="main-wrap">
-				<h1 class="title">
+				<h3 class="title">
 					ТИПОГРАФИЯ РАДИУС
-				</h1>
+				</h3>
 				<div class="subtitle">
 					НАШЕ ПРЕДПРИЯТИЕ ОТЛИЧАЕТ ВЫСОКАЯ СКОРОСТЬ И КАЧЕСТВО ВЫПОЛНЕНИЯ РАБОТ,
 					А ТАКЖЕ ВОЗМОЖНОСТЬ ПЕЧАТИ И ОБРАБОТКИ ШИРОКОГО СПЕКТРА МАТЕРИАЛОВ.
@@ -19,9 +19,9 @@
 		<div class="container">
 			<div class="info-block__wrap info-block">
 				<div class="info-block__descr">
-					<h2 class="info-block__title">
+					<h1 class="info-block__title">
 						ТИПОГРАФИЯ РАДИУС
-					</h2>
+					</h1>
 					<p class="info-block__subtitle">
 						Предоставляем полный комплекс услуг типографии: от печатной до постпечатной обработке полиграфической и рекламной продукции. Наша типография на рынке полиграфических услуг с 1987 года.
 					</p>

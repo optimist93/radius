@@ -9,9 +9,39 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/responsive-tabs.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/tooltipster.bundle.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="m-nav">
+		<div class="m-nav__close">&#10006;</div>
+		<ul class="m-nav-list">
+			<li class="m-nav-list__item">
+				<a href="index.php" class="m-nav__link">О компании</a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="services.php" class="m-nav__link">Услуги</a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="#" class="m-nav__link">Продукция</a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="#" class="m-nav__link">Клиентам </a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="#" class="m-nav__link">Вакансии</a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="#" class="m-nav__link">Оборудование</a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="#" class="m-nav__link">Новости</a>
+			</li>
+			<li class="m-nav-list__item">
+				<a href="#" class="m-nav__link">Контакты</a>
+			</li>
+		</ul>
+	</div> <!-- /m-nav -->
 	<header class="header">
 		<div class="container">
 			<div class="logo">
@@ -27,7 +57,7 @@
 				</form>
 			</div>
 
-			<div class="header-block">
+			<div class="header-block call">
 				<a href="mailto:sergey.s@radiusink.ru" class="header-block__email">sergey.s@radiusink.ru</a>
 				<a href="#" class="header-block__call consultation-link">Заказать звонок</a>
 			</div>
@@ -51,13 +81,14 @@
 				<div class="m-burger">
 					<span class="m-burger__menu"></span>
 				</div>
+				<a href="#" class="header-block__call consultation-link">Заказать звонок</a>
 				<ul class="main-nav-list">
 					<li class="main-nav-list__item">
-						<a href="/" class="main-nav__link">О компании</a>
+						<a href="index.php" class="main-nav__link">О компании</a>
 					</li>
 	
 					<li class="main-nav-list__item">
-						<a href="/services.php" class="main-nav__link">Услуги</a>
+						<a href="services.php" class="main-nav__link">Услуги</a>
 					</li>
 	
 					<li class="main-nav-list__item">
@@ -88,32 +119,5 @@
 				
 			</div> <!-- /.container -->
 		</div> <!-- /main-nav -->
-		<div class="m-nav">
-			<ul class="m-nav-list">
-				<li class="m-nav-list__item">
-					<a href="/" class="m-nav__link">О компании</a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="/services.php" class="m-nav__link">Услуги</a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="#" class="m-nav__link">Продукция</a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="#" class="m-nav__link">Клиентам </a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="#" class="m-nav__link">Вакансии</a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="#" class="m-nav__link">Оборудование</a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="#" class="m-nav__link">Новости</a>
-				</li>
-				<li class="m-nav-list__item">
-					<a href="#" class="m-nav__link">Контакты</a>
-				</li>
-			</ul>
-		</div>
+		
 	</header>
