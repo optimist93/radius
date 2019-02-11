@@ -313,7 +313,10 @@ template {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .header .logo {
     margin-right: 15px; }
   .header-search {
@@ -417,6 +420,12 @@ template {
     display: none;
     margin: auto;
     padding-right: 32px; }
+  .header.scroll {
+    padding: 0; }
+    .header.scroll .logo {
+      margin: 5px 0; }
+    .header.scroll .main-nav {
+      margin-top: 0; }
 
 .main-nav {
   position: relative;
@@ -425,19 +434,20 @@ template {
   transition: all 0.9s ease;
   background: #fff;
   z-index: 9; }
-  .main-nav-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    height: 33px;
-    padding: 0;
-    margin: 0;
-    background: #fff;
-    line-height: 33px;
-    list-style-type: none; }
-  .main-nav__link {
+
+#main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 33px;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  line-height: 33px;
+  list-style-type: none; }
+  #main-menu a {
     display: block;
     height: 27px;
     padding: 0 50px;
@@ -448,6 +458,9 @@ template {
     text-decoration: none;
     border-left: 1px solid #efefef;
     border-right: 1px solid #efefef; }
+  #main-menu .current a {
+    color: #fff;
+    background-color: #242829; }
 
 /* for mobile menu */
 .m-burger {
@@ -1426,22 +1439,26 @@ button {
   overflow: hidden; }
 
 @media (max-width: 1500px) {
-  .header .container {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
-  .header .logo {
-    height: 37px; }
-  .header-block__email, .header-block__skype, .header-block__location {
-    display: none; }
-  .header-block.header-block__middle {
-    margin: 0 0 0 25px; }
-  .header .form-search {
-    display: none; }
-  .main-nav__link {
+  .header {
+    padding: 0; }
+    .header .container {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .header .logo {
+      margin: 5px 0; }
+    .header .main-nav {
+      margin-top: 0; }
+    .header-block__email, .header-block__skype, .header-block__location {
+      display: none; }
+    .header-block.header-block__middle {
+      margin: 0 0 0 25px; }
+    .header .form-search {
+      display: none; }
+  #main-menu a {
     padding: 0 30px; }
   .comment-list {
     max-width: 1176px; }
@@ -1464,7 +1481,7 @@ button {
     max-width: 885px; } }
 
 @media (max-width: 1199px) {
-  .main-nav__link {
+  #main-menu a {
     padding: 0 15px; }
   .services-descr__header {
     margin-bottom: 30px; }
@@ -1496,8 +1513,6 @@ button {
     padding: 0; }
     .header.scroll .main-nav {
       margin-top: 0; }
-      .header.scroll .main-nav .header-block__call.consultation-link {
-        display: block; }
     .header.scroll .consultation-link {
       display: none; }
   .header-block__phone {
@@ -1509,9 +1524,9 @@ button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-  .main-nav-list {
+  #main-menu {
     height: 0; }
-    .main-nav-list__item {
+    #main-menu li {
       display: none; }
   .m-burger {
     display: block; }
@@ -1599,6 +1614,18 @@ button {
   .header .logo {
     height: auto;
     margin-right: 0; }
+  .header .header-block__call.consultation-link {
+    display: none; }
+  .header .main-nav .header-block__call.consultation-link {
+    display: block; }
+  .header .header-block__middle {
+    margin: 0; }
+  .header .header-block__phone {
+    display: block;
+    padding-left: 0;
+    background: none; }
+  .header.scroll .header-block__phone {
+    display: none; }
   .comment-list {
     max-width: 250px; }
     .comment-list .slick-track .slick-slide {

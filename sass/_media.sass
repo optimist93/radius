@@ -1,10 +1,13 @@
 @media (max-width: 1500px)
 	.header
+		padding: 0
 		.container
 			justify-content: center
 			align-items: center
 		.logo
-			height: 37px
+			margin: 5px 0
+		.main-nav
+			margin-top: 0
 		&-block
 			&__email,
 			&__skype,
@@ -14,9 +17,9 @@
 				margin: 0 0 0 25px
 		.form-search
 			display: none
-	.main
-		&-nav
-			&__link
+	#main
+		&-menu
+			a
 				padding: 0 30px
 	.comment
 		&-list
@@ -39,9 +42,9 @@
 		&-list
 			max-width: 885px
 @media (max-width: 1199px)
-	.main
-		&-nav
-			&__link
+	#main
+		&-menu
+			a
 				padding: 0 15px
 	.services
 		&-descr
@@ -71,8 +74,6 @@
 			padding: 0
 			.main-nav
 				margin-top: 0
-				.header-block__call.consultation-link
-					display: block
 			.consultation-link
 				display: none
 		&-block
@@ -85,12 +86,11 @@
 			&.call
 				width: 100%
 				align-items: center
-	.main
-		&-nav
-			&-list
-				height: 0
-				&__item
-					display: none
+	#main
+		&-menu
+			height: 0
+			li
+				display: none
 	.m
 		&-burger
 			display: block
@@ -171,6 +171,22 @@
 		.logo
 			height: auto
 			margin-right: 0
+		.header-block__call.consultation-link
+			display: none
+		.main-nav
+			.header-block__call.consultation-link
+				display: block
+		.header-block
+			&__middle
+				margin: 0
+			&__phone
+				display: block
+				padding-left: 0
+				background: none
+		&.scroll
+			.header-block__phone
+				display: none
+		
 	.comment
 		&-list
 			max-width: 250px

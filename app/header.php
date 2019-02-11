@@ -82,37 +82,37 @@
 					<span class="m-burger__menu"></span>
 				</div>
 				<a href="#" class="header-block__call consultation-link">Заказать звонок</a>
-				<ul class="main-nav-list">
-					<li class="main-nav-list__item">
-						<a href="index.php" class="main-nav__link">О компании</a>
+				<ul id="main-menu">
+					<li>
+						<a href="index.php">О компании</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="services.php" class="main-nav__link">Услуги</a>
+					<li>
+						<a href="services.php">Услуги</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="#" class="main-nav__link">продукция</a>
+					<li>
+						<a href="#">продукция</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="#" class="main-nav__link">клиентам</a>
+					<li>
+						<a href="#">клиентам</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="#" class="main-nav__link">вакансии</a>
+					<li>
+						<a href="#">вакансии</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="#" class="main-nav__link">оборудование</a>
+					<li>
+						<a href="#">оборудование</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="#" class="main-nav__link">новости</a>
+					<li>
+						<a href="#">новости</a>
 					</li>
 	
-					<li class="main-nav-list__item">
-						<a href="#" class="main-nav__link">контакты</a>
+					<li>
+						<a href="#">контакты</a>
 					</li>
 				</ul>
 
