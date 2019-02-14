@@ -305,9 +305,7 @@ template {
 .header {
   position: relative;
   padding: 19px 0 0 0;
-  background: #f7f7f7;
-  -webkit-transition: all 0.9s;
-  transition: all 0.9s; }
+  background: #f7f7f7; }
   .header .container {
     display: -webkit-box;
     display: -ms-flexbox;
