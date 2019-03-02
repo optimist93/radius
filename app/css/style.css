@@ -667,6 +667,12 @@ template {
         list-style-type: none; }
         .services-descr__social-items .social-list__item {
           margin: 0 2px; }
+  .services-descr__more {
+    display: none;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s; }
+    .services-descr__more .margin {
+      margin: 2px 0; }
   .services-descr__sliders {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -772,13 +778,27 @@ template {
     line-height: 19px;
     text-transform: uppercase; }
   .descr-tabs__more {
+    position: relative;
     display: block;
     padding-left: 12px;
     color: #0f427f;
     text-decoration: underline;
-    background: url("../img/services/tabs-more.png") no-repeat left center;
+    cursor: pointer;
     -webkit-transition: all 0.5s;
     transition: all 0.5s; }
+    .descr-tabs__more:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      display: block;
+      width: 8px;
+      height: 9px;
+      background: url("../img/services/tabs-more.png") no-repeat center center; }
+
+.more-active:before {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
 
 .r-tabs .r-tabs-nav {
   padding-bottom: 10px;

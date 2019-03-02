@@ -102,6 +102,21 @@ $(document).ready(function() {
 		]
 	});
 
+	/* more link */
+	$('.descr-tabs__more').click(function(e){
+		e.preventdefault;
+		if ( $(this).text() == 'развернуть' ){
+				 $('.services-descr__more').css('display', 'block');
+				 $('.descr-tabs__more').addClass('more-active');
+				 $(this).text('свернуть');
+				 console.log(1);
+		}else{
+				 $('.services-descr__more').css('display', 'none');
+				 $('.descr-tabs__more').removeClass('more-active');
+				 $(this).text('развернуть');
+		}
+	});
+
 	/* tooltips */
 	$('.tooltip').tooltipster();
 	/* popup windows */

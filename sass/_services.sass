@@ -61,6 +61,11 @@
 						list-style-type: none
 						&__item
 							margin: 0 2px
+		&__more
+			display: none
+			transition: all 0.9s
+			.margin
+				margin: 2px 0
 		&__sliders
 			display: flex
 			flex-direction: column
@@ -155,12 +160,24 @@
 			line-height: 19px
 			text-transform: uppercase
 		&__more
+			position: relative
 			display: block
 			padding-left: 12px
 			color: #0f427f
 			text-decoration: underline
-			background: url('../img/services/tabs-more.png') no-repeat left center
+			cursor: pointer
 			transition: all 0.5s
+			&:before
+				content: ''
+				position: absolute
+				left: 0
+				top: 5px
+				display: block
+				width: 8px
+				height: 9px
+				background: url('../img/services/tabs-more.png') no-repeat center center
+.more-active:before
+	transform: rotate(180deg)
 .r-tabs
 	.r-tabs-nav
 		padding-bottom: 10px
